@@ -4,7 +4,7 @@ public class CeasarCipher {
 
     /**
      * Encrypts a passed text using a Ceasar method with passed key.
-     * Uppercase and lowercase letters are shifted using the passed key.
+     * Uppercase, lowercase letters and special characters are shifted using the passed key.
      *
      * @param text The text to be encrypted.
      * @param key The key used to shift the letters.
@@ -31,7 +31,7 @@ public class CeasarCipher {
 
     /**
      * Decrypts a passed text using a Ceasar method with passed key to decrypt the text.
-     * Uppercase and lowercase letters are shift back.
+     * Uppercase, lowercase letters and special characters are shift back.
      *
      * @param text The text to be decrypted.
      * @param key The key for decryption.
