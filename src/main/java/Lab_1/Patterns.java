@@ -9,7 +9,7 @@ public class Patterns {
      * @param word The input string to be checked.
      * @return true if the input string contains only alphabetical characters, false otherwise.
      */
-    public boolean word(String word) {
+    public static boolean word(String word) {
         String questionPattern = "[a-zA-Z]+";
 
         Pattern pattern = Pattern.compile(questionPattern);
@@ -24,7 +24,7 @@ public class Patterns {
      * @param word The input string to be checked.
      * @return true if the input string is a binary number, false otherwise.
      */
-    public boolean binaryNumber(String word){
+    public static boolean binaryNumber(String word){
         String questionPattern = "[01]+";
 
         Pattern pattern = Pattern.compile(questionPattern);
@@ -39,7 +39,7 @@ public class Patterns {
      * @param word The input string to be checked.
      * @return true if the input string represents "Saturday" or "Sunday", false otherwise.
      */
-    public boolean saturdaySunday(String word){
+    public static boolean saturdaySunday(String word){
         String questionPattern = "S(un|atur)day";
 
         Pattern pattern = Pattern.compile(questionPattern);
@@ -54,7 +54,7 @@ public class Patterns {
      * @param word The input string to be checked.
      * @return true if the input string follows the specified pattern, false otherwise.
      */
-    public boolean dNumber(String word){
+    public static boolean dNumber(String word){
         String questionPattern = "[Dd]00[0-9]{6}";
 
         Pattern pattern = Pattern.compile(questionPattern);
@@ -69,7 +69,7 @@ public class Patterns {
      * @param word The input string to be checked.
      * @return true if the input string is a valid email address, false otherwise.
      */
-    public boolean emailAddress(String word){
+    public static boolean emailAddress(String word){
         String questionPattern = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}$";
 
         Pattern pattern = Pattern.compile(questionPattern);
@@ -86,7 +86,7 @@ public class Patterns {
      * @param word The input string to be checked.
      * @return true if the input string is a strong password, false otherwise.
      */
-    public boolean password(String word){
+    public static boolean password(String word){
         String questionPattern = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{12}$";
 
         Pattern pattern = Pattern.compile(questionPattern);

@@ -3,10 +3,6 @@ package Lab_2;
 import java.util.Scanner;
 import java.lang.Exception;
 
-/**
- * The Functions class provides methods for a validation app,
- * including validating passwords, emails, phone numbers, and full names.
- */
 public class Functions {
 
     /**
