@@ -3,6 +3,7 @@ import Lab_1.Patterns;
 import Lab_1.Patterns.*;
 import Lab_3.CeasarCipher;
 import Lab_5.HashSalt;
+import Lab_6.Diffie_Hellman;
 
 import java.io.File;
 import java.io.IOException;
@@ -33,7 +34,10 @@ public class Menu {
                             "2. Encrypt a text file\n" +
                             "3. Decrypt a text file\n" +
                             "4. Brute force decrypt the file\n" +
-                            "5. Exit\n" +
+                            "5. Hash your password\n" +
+                            "6. Verify password\n" +
+                            "7. Generate a shared private key\n" +
+                            "8. Exit\n" +
                             "Enter your choice: ");
                     choice = Methods.getChoice(sc);
                     switch (choice) {
@@ -117,6 +121,9 @@ public class Menu {
                             }
                             break;
                         case 7:
+                            Diffie_Hellman.part_6(sc);
+                            break;
+                        case 8:
                             System.out.println("You exit the program.");
                             sc.close();
                             System.exit(0);
